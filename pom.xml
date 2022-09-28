@@ -10,7 +10,7 @@
     </parent>
     <groupId>cn.com.ogtwelve</groupId>
     <artifactId>OGTwelveUtilPack</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>cn.com.ogtwelve:OGTwelveUtilPack</name>
     <description>OGTwelveUtilPack</description>
     <licenses>
@@ -85,6 +85,11 @@
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
             <version>1.6.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.0.Final</version>
         </dependency>
     </dependencies>
 

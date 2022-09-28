@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OGtwelveUtilPackApplication {
+public class OGTwelveUtilPackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OGtwelveUtilPackApplication.class, args);
+        SpringApplication.run(OGTwelveUtilPackApplication.class, args);
     }
 
 }
