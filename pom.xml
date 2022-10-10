@@ -10,13 +10,13 @@
     </parent>
     <groupId>cn.com.ogtwelve</groupId>
     <artifactId>OGTwelveUtilPack</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <name>cn.com.ogtwelve:OGTwelveUtilPack</name>
     <description>OGTwelveUtilPack</description>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
     <properties>
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>1.32</version>
+            <version>1.33</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,7 +57,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <!--Gson-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -112,7 +111,6 @@
 
 
     <profiles>
-
         <profile>
             <id>release</id>
             <build>
@@ -208,12 +206,11 @@
                             </execution>
                         </executions>
                     </plugin>
-
-
                 </plugins>
             </build>
         </profile>
     </profiles>
+
     <scm>
         <url>https://github.com/OGtwelve/OGTwelveUtilPack</url>
         <connection>https://github.com/OGtwelve/OGTwelveUtilPack.git</connection>

@@ -8,12 +8,14 @@ import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
 import com.fasterxml.jackson.datatype.joda.cfg.JacksonJodaDateFormat;
 import com.fasterxml.jackson.datatype.joda.deser.InstantDeserializer;
+import com.fasterxml.jackson.datatype.joda.ser.DateTimeSerializer;
 import com.fasterxml.jackson.datatype.joda.ser.InstantSerializer;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -43,6 +45,7 @@ public class GlobalTimeConfig {
 
     /**
      * The method is a http request converter;
+     * Convert from [java.time] LocalDate LocalDateTime Instant Calendar and [org.joda] LocalDate LocalDateTime Instant to any type u want;
      * @return MappingJackson2HttpMessageConverter
      */
     @Bean
@@ -81,6 +84,15 @@ public class GlobalTimeConfig {
                     new InstantDeserializer(new JacksonJodaDateFormat(DateTimeFormat.forPattern(dateTimePattern)).withTimeZone(TimeZone.getDefault())));
             jodaModule.addSerializer(org.joda.time.Instant.class,
                     new InstantSerializer(new JacksonJodaDateFormat(DateTimeFormat.forPattern(dateTimePattern)).withTimeZone(TimeZone.getDefault())));
+            jodaModule.addSerializer(DateTime.class, new DateTimeSerializer(new JacksonJodaDateFormat(DateTimeFormat.forPattern(dateTimePattern))));
+            jodaModule.addDeserializer(DateTime.class, new JsonDeserializer<DateTime>() {
+                @Override
+                public DateTime deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {
+                    String date = jsonParser.readValueAs(String.class);
+                    org.joda.time.format.DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd");
+                    return DateTime.parse(date,formatter);
+                }
+            });
             objectMapper.registerModule(javaTimeModule);
             objectMapper.registerModule(jodaModule);
         }catch (Exception e){
