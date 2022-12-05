@@ -2,11 +2,11 @@
 
 <h2>How to use my global time converter in spring boot application:</h2>
 <h4>1. maven dependency (currently only central Maven repository have this dependency, haven't add to Aliyun repository)</h4>
-<h3><dependency>
+<dependency>
     <groupId>cn.com.ogtwelve</groupId>
     <artifactId>OGTwelveUtilPack</artifactId>
     <version></version> // see whats the newest version is;
-</dependency></h3>
+</dependency>
 <h4>2. just add one scan at the starter:
 @SpringBootApplication(scanBasePackages = "cn.com.ogtwelve.utils")</h4>
 
