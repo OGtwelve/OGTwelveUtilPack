@@ -1,4 +1,4 @@
-# Version infos
+# The use of tools
 
 <h2>How to use my global time converter in spring boot application:</h2>
 <h4>1. maven dependency (currently only central Maven repository have this dependency, haven't add to Aliyun repository)</h4>
@@ -13,7 +13,7 @@
 <h4>2. just add one scan at the starter:
 @SpringBootApplication(scanBasePackages = "cn.com.ogtwelve.utils")</h4>
 
-
+# Version infos
 
 <h4> v1.0.0-v1.0.2: Import basic utils;</h4>
 
