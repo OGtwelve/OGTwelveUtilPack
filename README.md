@@ -10,8 +10,9 @@
     <version></version> <!--See whats the newest version is;-->
 </dependency>
 ```
-<h4>2. just add one scan at the starter:
-@SpringBootApplication(scanBasePackages = "cn.com.ogtwelve.utils")</h4>
+<h4>2. just add one scan at the starter:</h4>
+
+`@SpringBootApplication(scanBasePackages = "cn.com.ogtwelve.utils")`
 
 # Version infos
 
