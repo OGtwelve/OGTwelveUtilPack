@@ -29,3 +29,5 @@
 	
 <h4> v1.0.7: Add serializer & deserializer to [org.joda.time.DateTime] class</h4>
 
+<h4> v1.0.8: ProcShell.java: Add method for execute multi-line of CMD command; <br/>
+	&emsp;&emsp;&emsp;Also add dependencies for slf4j and log4j</h4>
