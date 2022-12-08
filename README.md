@@ -31,3 +31,9 @@
 
 <h4> v1.0.8: ProcShell.java: Add method for execute multi-line of CMD command; <br/>
 	&emsp;&emsp;&emsp;Also add dependencies for slf4j and log4j</h4>
+	
+# At last
+<h4>❤️Please fire away all the ideas u have for this project;</h4>
+<h4>🙇‍♂️Thank u guys for the stars and forks, welcome to take part in this project;</h4>
+<h4>💪Wish each and every one of u guys can be better than ur former self;</h4>
+	
