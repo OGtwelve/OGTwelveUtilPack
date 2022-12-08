@@ -16,9 +16,6 @@ import java.util.Map;
 public class GlobalTimeTest {
     public static void main(String[] args) {
         Map<String,Object> result = test();
-        result.forEach((k, v) -> {
-            System.out.println(k + "\t" + v);
-        });
         System.out.println(result);
     }
     public static Map<String,Object> test(){
