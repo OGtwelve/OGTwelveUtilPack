@@ -40,6 +40,8 @@
 
 <h4> v1.1.2: Deprecate the GlobalTimeConverter and removed getConversionService method in GlobalTimeConfig</h4>
 	
+<h4> v1.1.3: Remove autoconfiguration settings, set the version back to 1.0.8</h4>
+	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
 <h4>🙇‍♂️Thank u guys for the stars and forks, welcome to take part in this project;</h4>
