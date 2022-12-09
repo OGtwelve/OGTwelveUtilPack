@@ -33,6 +33,8 @@
 	&emsp;&emsp;&emsp;Also add dependencies for slf4j and log4j</h4>
 	
 <h4> v1.0.9: Add a autoconfiguration for the time converter;</h4>
+
+<h4> v1.1.0: patch up for autoconfig bugs in version 1.0.9;</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
