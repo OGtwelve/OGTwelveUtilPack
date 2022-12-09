@@ -34,7 +34,11 @@
 	
 <h4> v1.0.9: Add a autoconfiguration for the time converter;</h4>
 
-<h4> v1.1.0: patch up for autoconfig bugs in version 1.0.9;</h4>
+<h4> v1.1.0: Patch up for autoconfig bugs in version 1.0.9;</h4>
+
+<h4> v1.1.1: Nothing added;</h4>
+
+<h4> v1.1.2: Deprecate the GlobalTimeConverter and removed getConversionService method in GlobalTimeConfig</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
