@@ -44,7 +44,9 @@
 
 <h4> v1.1.4: Changed 1 or 2 lines in pom file;</h4>
 
-<h4> v1.1.5: Changed few dependencies in pom file;</h4>
+<h4> v1.1.5: Nothing added;</h4>
+
+<h4> v1.1.6: Changed few dependencies in pom file;</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
