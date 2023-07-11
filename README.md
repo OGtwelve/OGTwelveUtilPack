@@ -19,6 +19,7 @@
 
 ```java
 // version big than 1.18 will be using annotation to use time formatter
+// better use above 1.2.0, because there won't be any waste output in the console
 @SpringBootApplication
 @EnableGlobalDateFormat
 public class Application {
@@ -63,6 +64,8 @@ public class Application {
 <h4> v1.1.8: Change into using annotation to use time formatter : @EnableGlobalDateFormat</h4>
 
 <h4> v1.1.9: Changed few dependencies in pom file;</h4>
+
+<h4> v1.2.0: Perfect version, when not using @EnableGlobalDateFormat, it won't conflict with the project itself,<br/> and it won't have any waste output in the console; </h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
