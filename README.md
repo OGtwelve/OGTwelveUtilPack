@@ -18,7 +18,7 @@
 ```
 
 ```java
-// version big than 1.17 will be using annotation to use time formatter
+// version big than 1.18 will be using annotation to use time formatter
 @SpringBootApplication
 @EnableGlobalDateFormat
 public class Application {
@@ -42,7 +42,7 @@ public class Application {
 <h4> v1.0.8: ProcShell.java: Add method for execute multi-line of CMD command; <br/>
 	&emsp;&emsp;&emsp;Also add dependencies for slf4j and log4j</h4>
 	
-<h4> v1.0.9: Add a autoconfiguration for the time converter;</h4>
+<h4> v1.0.9(Deprecated): Add a autoconfiguration for the time converter;</h4>
 
 <h4> v1.1.0: Patch up for autoconfig bugs in version 1.0.9;</h4>
 
@@ -58,7 +58,9 @@ public class Application {
 
 <h4> v1.1.6: Changed few dependencies in pom file;</h4>
 
-<h4> v1.1.7: Change into using annotation to use time formatter : @EnableGlobalDateFormat</h4>
+<h4> v1.1.7(Deprecated): Changed few dependencies in pom file;</h4>
+
+<h4> v1.1.8: Change into using annotation to use time formatter : @EnableGlobalDateFormat</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
