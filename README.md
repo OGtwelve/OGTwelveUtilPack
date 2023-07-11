@@ -13,7 +13,17 @@
 <h4>2. just add one scan at the starter:</h4>
 
 ```java
+// version 1.16 and other thats below this number
 @SpringBootApplication(scanBasePackages = "cn.com.ogtwelve.utils")
+```
+
+```java
+// version big than 1.17 will be using annotation to use time formatter
+@SpringBootApplication
+@EnableGlobalDateFormat
+public class Application {
+  ...
+}
 ```
 
 # Version infos
@@ -47,6 +57,8 @@
 <h4> v1.1.5: Nothing added;</h4>
 
 <h4> v1.1.6: Changed few dependencies in pom file;</h4>
+
+<h4> v1.1.7: Change into using annotation to use time formatter : @EnableGlobalDateFormat</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
