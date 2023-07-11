@@ -1,6 +1,7 @@
 package cn.com.ogtwelve.annotation;
 
 import cn.com.ogtwelve.utils.GlobalTimeConfig;
+import cn.com.ogtwelve.utils.GlobalTimeConverter;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -13,7 +14,7 @@ import java.lang.annotation.*;
 
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Import({GlobalTimeConfig.class})
+@Import({GlobalTimeConfig.class, GlobalTimeConverter.class})
 @Inherited
 public @interface EnableGlobalDateFormat {
 
