@@ -16,6 +16,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Import({GlobalTimeConfig.class, GlobalTimeConverter.class})
 @Inherited
+
 public @interface EnableGlobalDateFormat {
 
 }
