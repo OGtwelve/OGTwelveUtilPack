@@ -14,14 +14,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * TODO 时间处理工具类
- *
- * @author ws
- * @mail 1720696548@qq.com
- * @date 2020/4/24 0024 9:54
- * @return
- */
 @Component
 public class LocalDateTimeUtil {
 
