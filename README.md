@@ -61,9 +61,11 @@ public class Application {
 <h4> v1.1.7(Deprecated): Changed few dependencies in pom file;</h4>
 
 <h4> v1.1.8: Change into using annotation to use time formatter : @EnableGlobalDateFormat</h4>
+
+<h4> v1.1.9: Changed few dependencies in pom file;</h4>
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
 <h4>🙇‍♂️Thank u guys for the stars and forks, welcome to take part in this project;</h4>
-<h4>💪Wish each and every one of u guys can be better than ur former self;</h4>
+<h4>💪Wish each one of u guys can be better than ur former self;</h4>
 	
