@@ -20,7 +20,7 @@ import java.time.Duration;
 @Configuration
 @EnableConfigurationProperties({OpenAI.class})
 public class ChatGPTAutoConfigure {
-    @Resource
+    @Autowired
     private OpenAI properties;
 
     public ChatGPTAutoConfigure() {
