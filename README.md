@@ -13,7 +13,9 @@
 ```
 
 <h4>2. add annotation to the starter class:</h4>
+
 ```java
+
 // how to use chatgpt using my dependency
 // date time formatter and chatgpt can be used at the same time, if u want to use chatgpt, just add @EnableChatGPT
 // if u want to use date time formatter, just add @EnableGlobalDateFormat
@@ -23,6 +25,7 @@
 public class Application {
   ...
 }
+
 ```
 <h4>3. add your own api key to the application class:</h4>
 
