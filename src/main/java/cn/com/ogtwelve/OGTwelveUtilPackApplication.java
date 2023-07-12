@@ -1,5 +1,6 @@
 package cn.com.ogtwelve;
 
+import cn.com.ogtwelve.annotation.EnableChatGPT;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
