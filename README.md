@@ -1,6 +1,7 @@
 # The use of tools
 
-<h2>How to use my global time converter in spring boot application:</h2>
+
+<h1>How to use your own chatgpt api:</h1>
 <h4>1. maven dependency (currently only central Maven repository have this dependency, haven't add to Aliyun repository)</h4>
 
 ```xml
@@ -10,7 +11,59 @@
     <version></version> <!--See whats the newest version is;-->
 </dependency>
 ```
-<h4>2. just add one scan at the starter:</h4>
+
+<h4>2. add annotation to the starter class:</h4>
+```java
+// how to use chatgpt using my dependency
+// date time formatter and chatgpt can be used at the same time, if u want to use chatgpt, just add @EnableChatGPT
+// if u want to use date time formatter, just add @EnableGlobalDateFormat
+// if u want to use both, just add both of them
+@SpringBootApplication
+@EnableChatGPT
+public class Application {
+  ...
+}
+```
+<h4>3. add your own api key to the application class:</h4>
+
+properties file :
+```properties
+# if use application.properties
+# proxy depends on weather u have a vpn or not , if not just delete the proxyHost and proxyPort
+# but without vpn, u might not be able to use the chatgpt api or just have to wait for a long time to get the response
+# model and chatModel, about these parameters, u can go to openai's website to check out the model u want to use
+# last parameter is the session expiration time, if u want the session to be expired in how many *minutes*, just change the number
+openai.token=
+openai.proxyHost=127.0.0.1
+openai.proxyPort=4780
+openai.model=
+openai.chatModel=
+openai.sessionExpirationTime=30
+```
+yaml file :
+```yaml
+openai:
+  token:
+  proxyHost:
+  proxyPort:
+  model:
+  chatModel:
+  sessionExpirationTime:
+```
+
+<h4>And there you have it, after above settings u can use ur api now;</h4>
+
+<h1>How to use my global time converter in spring boot application:</h1>
+<h4>1. maven dependency (currently only central Maven repository have this dependency, haven't add to Aliyun repository)</h4>
+
+```xml
+<dependency>
+    <groupId>cn.com.ogtwelve</groupId>
+    <artifactId>OGTwelveUtilPack</artifactId>
+    <version></version> <!--See whats the newest version is;-->
+</dependency>
+```
+<h4>2. just add one scan or a annotation at the starter:</h4>
 
 ```java
 // version 1.16 and other thats below this number
@@ -66,7 +119,10 @@ public class Application {
 <h4> v1.1.9: Changed few dependencies in pom file;</h4>
 
 <h4> v1.2.0: Perfect version, when not using @EnableGlobalDateFormat, it won't conflict with the project itself,<br/> and it won't have any waste output in the console; </h4>
-<h4> v1.2.1: Put openAi's chatgpt into use;</h4>
+
+<h4> v1.2.1 - v1.2.4: Put openAi's chatgpt into use;(Had bug)</h4>
+
+<h4> v1.2.5: Working chatgpt dependency;</h4>
 
 	
 # At last
