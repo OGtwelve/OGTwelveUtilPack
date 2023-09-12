@@ -22,7 +22,7 @@ public class OpenAI {
     private Integer sessionExpirationTime;
 
     private static String $default$model() {
-        return "text-davinci-003";
+        return "gpt-3.5-turbo";
     }
 
     private static String $default$chatModel() {
