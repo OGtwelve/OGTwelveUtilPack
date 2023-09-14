@@ -127,6 +127,8 @@ public class Application {
 
 <h4> v1.2.5: Working chatgpt dependency;</h4>
 
+<h4> v1.2.6: Change default chat model;</h4>
+
 	
 # At last
 <h4>❤️Please fire away all the ideas u have for this project;</h4>
